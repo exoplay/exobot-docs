@@ -1,11 +1,12 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
-const routes = require('./pages/routes');
+const routes = require('./pages/routes').routes;
+const siteRoot = require('./pages/routes').siteRoot;
 
 const isProd = process.env.NODE_ENV === 'production';
 
 module.exports = {
-  assetPrefix: '.',
+  assetPrefix: siteRoot,
   exportPathMap: function () {
     return routes;
   },

@@ -6,6 +6,7 @@ import { Flex, Box } from 'reflexbox';
 import { Card, Heading, Block, Text, Media, Divider, Input, ButtonOutline, Badge } from 'rebass';
 import moment from 'moment';
 
+import { siteRoot } from '../pages/routes';
 import theme from '../pages/theme';
 
 const TRY_COMMANDS = [
@@ -101,7 +102,7 @@ export default class ExobotChat extends Component {
           <div style={{ height: '300px', overflow: 'auto' }} ref={(chatbox) => this.chatbox = chatbox }>
             { this.state.messages.map((m, i) => (
               <Box pt={1} key={`chat-${i}`}>
-                <Media align="top" img={`/static/images/${m.user.name.toLowerCase()}.png`} imgHeight={36} imgWidth={36}>
+                <Media align="top" img={`${siteRoot}/static/images/${m.user.name.toLowerCase()}.png`} imgHeight={36} imgWidth={36}>
                   <Text small={true}>
                     <b>{ m.user.name }</b>
                     <span style={{ color: theme.small.color }}>{' • '}</span>

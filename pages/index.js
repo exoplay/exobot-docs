@@ -9,7 +9,7 @@ import Navbar from '../components/navbar';
 export default () => (
   <div>
     <Head>
-      <title>Exobot: an elegant chatbot for a more civilized age</title>
+      <title>Exobot: An elegant chatbot, for a more civilized age</title>
     </Head>
 
     <Navbar currentPage="/" />
