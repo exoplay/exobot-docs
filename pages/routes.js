@@ -6,5 +6,5 @@ module.exports = {
     "/new-plugin": { page: "/new-plugin", title: "Scripting New Plugins", nav: true },
     "/new-adapter": { page: "/new-adapter", title: "Creating New Service Adapters", nav: true },
   },
-  siteRoot: '/',
+  siteRoot: '',
 };
