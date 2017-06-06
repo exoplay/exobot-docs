@@ -3,7 +3,7 @@
             var comp = module.exports =
 webpackJsonp([4],{
 
-/***/ 463:
+/***/ 470:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17,31 +17,31 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _head = __webpack_require__(59);
+var _head = __webpack_require__(58);
 
 var _head2 = _interopRequireDefault(_head);
 
-var _reflexbox = __webpack_require__(62);
+var _reflexbox = __webpack_require__(61);
 
 var _rebass = __webpack_require__(32);
 
-var _light = __webpack_require__(847);
+var _light = __webpack_require__(870);
 
 var _light2 = _interopRequireDefault(_light);
 
-var _javascript = __webpack_require__(846);
+var _javascript = __webpack_require__(869);
 
 var _javascript2 = _interopRequireDefault(_javascript);
 
-var _ascetic = __webpack_require__(848);
+var _ascetic = __webpack_require__(871);
 
 var _ascetic2 = _interopRequireDefault(_ascetic);
 
-var _footer = __webpack_require__(100);
+var _footer = __webpack_require__(99);
 
 var _footer2 = _interopRequireDefault(_footer);
 
-var _navbar = __webpack_require__(101);
+var _navbar = __webpack_require__(100);
 
 var _navbar2 = _interopRequireDefault(_navbar);
 
@@ -54,7 +54,7 @@ exports.default = function () {
 
 /***/ }),
 
-/***/ 490:
+/***/ 498:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76,7 +76,7 @@ exports.default = function (obj, keys) {
 
 /***/ }),
 
-/***/ 593:
+/***/ 609:
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -252,7 +252,7 @@ module.exports = function(hljs) {
 
 /***/ }),
 
-/***/ 803:
+/***/ 822:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -268,7 +268,7 @@ module.exports = function(hljs) {
 
 
 /* Dependencies. */
-var high = __webpack_require__(804);
+var high = __webpack_require__(823);
 
 /* The lowlight interface, which has to be compatible
  * with highlight.js, as this object is passed to
@@ -978,7 +978,7 @@ function getLanguage(name) {
 
 /***/ }),
 
-/***/ 804:
+/***/ 823:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -1801,7 +1801,7 @@ https://highlightjs.org/
 
 /***/ }),
 
-/***/ 844:
+/***/ 867:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1811,11 +1811,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _assign = __webpack_require__(81);
+var _assign = __webpack_require__(79);
 
 var _assign2 = _interopRequireDefault(_assign);
 
-var _extends2 = __webpack_require__(83);
+var _extends2 = __webpack_require__(81);
 
 var _extends3 = _interopRequireDefault(_extends2);
 
@@ -1888,7 +1888,7 @@ function createElement(_ref) {
 
 /***/ }),
 
-/***/ 845:
+/***/ 868:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1898,11 +1898,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _assign = __webpack_require__(81);
+var _assign = __webpack_require__(79);
 
 var _assign2 = _interopRequireDefault(_assign);
 
-var _objectWithoutProperties2 = __webpack_require__(490);
+var _objectWithoutProperties2 = __webpack_require__(498);
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -1971,7 +1971,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _createElement = __webpack_require__(844);
+var _createElement = __webpack_require__(867);
 
 var _createElement2 = _interopRequireDefault(_createElement);
 
@@ -2124,7 +2124,7 @@ function defaultRenderer(_ref4) {
 
 /***/ }),
 
-/***/ 846:
+/***/ 869:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2134,7 +2134,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _javascript = __webpack_require__(593);
+var _javascript = __webpack_require__(609);
 
 var _javascript2 = _interopRequireDefault(_javascript);
 
@@ -2144,7 +2144,7 @@ exports.default = _javascript2.default;
 
 /***/ }),
 
-/***/ 847:
+/***/ 870:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2155,11 +2155,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.registerLanguage = undefined;
 
-var _highlight = __webpack_require__(845);
+var _highlight = __webpack_require__(868);
 
 var _highlight2 = _interopRequireDefault(_highlight);
 
-var _core = __webpack_require__(803);
+var _core = __webpack_require__(822);
 
 var _core2 = _interopRequireDefault(_core);
 
@@ -2170,7 +2170,7 @@ exports.default = (0, _highlight2.default)(_core2.default, {});
 
 /***/ }),
 
-/***/ 848:
+/***/ 871:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2249,15 +2249,15 @@ exports.default = {
 
 /***/ }),
 
-/***/ 968:
+/***/ 991:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(463);
+module.exports = __webpack_require__(470);
 
 
 /***/ })
 
-},[968]);
+},[991]);
             return { page: comp.default }
           })
         

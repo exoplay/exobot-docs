@@ -3,7 +3,7 @@
             var comp = module.exports =
 webpackJsonp([10],{
 
-/***/ 460:
+/***/ 467:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17,19 +17,19 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _head = __webpack_require__(59);
+var _head = __webpack_require__(58);
 
 var _head2 = _interopRequireDefault(_head);
 
-var _reflexbox = __webpack_require__(62);
+var _reflexbox = __webpack_require__(61);
 
 var _rebass = __webpack_require__(32);
 
-var _footer = __webpack_require__(100);
+var _footer = __webpack_require__(99);
 
 var _footer2 = _interopRequireDefault(_footer);
 
-var _navbar = __webpack_require__(101);
+var _navbar = __webpack_require__(100);
 
 var _navbar2 = _interopRequireDefault(_navbar);
 
@@ -41,15 +41,15 @@ exports.default = function () {
 
 /***/ }),
 
-/***/ 965:
+/***/ 988:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(460);
+module.exports = __webpack_require__(467);
 
 
 /***/ })
 
-},[965]);
+},[988]);
             return { page: comp.default }
           })
         

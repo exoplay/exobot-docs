@@ -52,6 +52,14 @@ npm start`}
           The Environmental Way
         </Heading>
 
+        <Text mt={1}>
+          Environment-based setup automatically parses environment variables
+          based on plugin name. For example, if in your configuration file, you
+          have a plugin named <code>giphy</code> and it has a configuration
+          parameter called <code>token</code>, you would set an environment
+          variable called <code>GIPHY_TOKEN</code> to the proper value.
+        </Text>
+
         <Heading level={3} mt={2}>
           The Explicit Way
         </Heading>
@@ -77,7 +85,7 @@ npm start`}
 
         <ul>
           <li><b>alias</b> - an additional way to trigger exobot commands. '/', ';', or 'hey bot', for example.</li>
-          <li><b>dapters</b> - an array of initialized chat adapters, such as slack, discord, or twitch. exobot also comes with a shell adapter for playing around in your terminal.</li>
+          <li><b>adapters</b> - an array of initialized chat adapters, such as slack, discord, or twitch. exobot also comes with a shell adapter for playing around in your terminal.</li>
           <li><b>plugins</b> - an array of initialized plugins, such as giphy or points. exobot also comes with help and greetings plugins as examples.</li>
           <li><b>readFile</b> and <b>writeFile</b> - functions called when the in-memory json db is saved. By default, this writes a json file to cwd/data/botname.json, but you could also override the default local file storage to use s3 with <code>@exoplay/exobot-db-s3</code>.</li>
           <li><b>dbPath</b> - if you're using local file storage, you can set where to save. Defaults to cwd/data/botname.json.</li>
@@ -95,6 +103,16 @@ npm start`}
           <code>{' '}Permissions{' '}</code> plugin to lock down the bot and
           whitelist commands to users in specific groups.
         </Text>
+
+        <Text>
+          Running <code>exobot plugin help permission</code> will explain the
+          commands used to manage permissions. The general idea is that each
+          command in exobot will have a category, such as
+          <code>uptime.uptime</code>, and you can whitelist commands for each
+          group, and add people to one or more groups. This keeps commands safe
+          in public channels, such as locking down the ability to schedule
+          events to moderators.
+        </Text>
       </Section>
 
       <Section>
@@ -104,8 +122,19 @@ npm start`}
 
         <Text>
           Building on top of the permissions sytem, you can also attach the
-          <code>{' '}HTTP{' '}</code> adapter to exobot to allow it to receive messages
-          over HTTP.
+          <code>{' '}HTTP{' '}</code> adapter to exobot to allow it to receive
+          messages over HTTP. Run <code>exobot plugin help webhook</code> to
+          find out about the specific commands. You'll basically create new
+          "users" for each webhook, and give each usr a group - so that each
+          webhook only has access to the commands you explicitly give it.
+        </Text>
+
+        <Text>
+          Configure the HTTP adapter for Exobot (done by default when using
+          the build tools) to use webhooks, and call it by accessing the server
+          exobot is running at, at the port specified, with ?token, ?userid, and
+          ?message passed in. This will run the contents of ?message through
+          plugins and possibly respond in configured channels.
         </Text>
       </Section>
     </Box>
